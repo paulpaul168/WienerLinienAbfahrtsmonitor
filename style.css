@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+body{
+	background-color: black;
+	color: #fafafa;
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 6vh;
+}
+
+#error{
+	animation: animate 10s linear infinite;
+	color: red;
+	text-align: center;
+	padding-bottom: 5vh;
+	padding-top: 5vh;
+}
+
+
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes animate{
+   0%{
+	opacity: 1;
+	color: red;
+   }
+   25%{
+	opacity: 0;
+	color: red;
+	transform:rotate(0deg); 
+   }
+   50%{
+	opacity: 0.7;
+	color: green;
+	transform: rotate(0deg); 
+   }
+   100%{
+	opacity: 0;
+	color: blue;
+	transform: translateY(100%) rotate(900deg); 
+
+   }
+ }
+
+#clock {
+	color: #fafafa;
+	font-size: 7vh;
+	text-align: center;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+#station{
+	text-align: center;
+	padding-bottom: 8vh;
+}
+
+.row{
+	display:flex;
+	justify-content: space-between;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	margin-bottom: 5vh;
+}
+
