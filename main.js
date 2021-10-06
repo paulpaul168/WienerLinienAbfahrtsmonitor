@@ -15,6 +15,7 @@ async function get_data(){
 		document.getElementById("st2").innerText = name + "  "+ towards;
 		document.getElementById("st1time").innerText = departures[0].departureTime.countdown + "  min";
 		document.getElementById("st2time").innerText = departures[1].departureTime.countdown + "  min";
+		document.getElementById("error").innerText = "";
 	} catch (error){
 		if(error == "TypeError: can't access property \"lines\", json.data.monitors[0] is undefined"){
 			document.getElementById("error").innerText = "Kein D Wagen in der Nacht";
